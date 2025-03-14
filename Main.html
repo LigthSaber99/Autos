@@ -3,16 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Autos</title>
+    <title>Luxury Cars</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Autos de Calidad</h1>
+    <header class="hero">
+        <h1 class="fade-in">Descubre la Elegancia en Movimiento</h1>
+        <p class="fade-in">Los autos más exclusivos a tu alcance</p>
+        <a href="#modelos" class="btn pulse">Explorar Modelos</a>
     </header>
-    <section>
-        <p>Encuentra los mejores autos al mejor precio.</p>
+    
+    <section id="modelos" class="models slide-up">
+        <h2>Nuestros Modelos</h2>
+        <div class="model-container">
+            <div class="model-card zoom-in">
+                <img src="img/1.png" alt="Modelo 1" class="responsive-img">
+                <h3>Luxury Sedan</h3>
+                <p>Comodidad y tecnología avanzada.</p>
+                <a href="#" class="btn">Más Info</a>
+            </div>
+            <div class="model-card zoom-in">
+                <img src="img/2.jpeg" alt="Modelo 2" class="responsive-img">
+                <h3>Deportivo Exclusivo</h3>
+                <p>Potencia y diseño aerodinámico.</p>
+                <a href="#" class="btn">Más Info</a>
+            </div>
+            <div class="model-card zoom-in">
+                <img src="img/3.jpeg" alt="Modelo 3" class="responsive-img">
+                <h3>SUV Premium</h3>
+                <p>Espacio y seguridad inigualables.</p>
+                <a href="#" class="btn">Más Info</a>
+            </div>
+        </div>
     </section>
-    <script src="script.js"></script>
+
+    <section class="customizer slide-up">
+        <h2>Personaliza tu Auto</h2>
+        <p>Elige el color y detalles de tu auto ideal</p>
+        <div class="color-picker">
+            <button class="color-btn" style="background: red;" onclick="changeColor('red')"></button>
+            <button class="color-btn" style="background: black;" onclick="changeColor('black')"></button>
+            <button class="color-btn" style="background: blue;" onclick="changeColor('blue')"></button>
+        </div>
+        <img id="car-display" src="img/p1.jpg" alt="Auto Personalizado" class="responsive-img">
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Cars. Todos los derechos reservados.</p>
+    </footer>
+    <script src="java.js"></script>
 </body>
 </html>
+
